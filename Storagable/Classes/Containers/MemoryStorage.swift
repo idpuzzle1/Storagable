@@ -17,11 +17,11 @@ public class MemoryAdapter: StorageAdapter {
         self.memory = items
     }
         
-    public func set<Value>(value: Value?, for item: Storagable<Key, Value>) {
+    public func set<Value>(value: Value?, for item: Item<Value>) {
         memory[item.key] = value
     }
     
-    public func value<Value>(for item: Storagable<Key, Value>) -> Value? {
+    public func value<Value>(for item: Item<Value>) -> Value? {
         return memory[item.key] as? Value
     }
 }

@@ -16,11 +16,11 @@ public struct UserDefaultsAdapter: StorageAdapter {
         self.defaults = defaults
     }
     
-    public func set<Value>(value: Value?, for item: Storagable<Key, Value>) {
+    public func set<Value>(value: Value?, for item: Item<Value>) {
         defaults.set(value, forKey: item.key)
     }
     
-    public func value<Value>(for item: Storagable<Key, Value>) -> Value? {
+    public func value<Value>(for item: Item<Value>) -> Value? {
         return defaults.value(forKey: item.key) as? Value
     }
 }
