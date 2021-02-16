@@ -5,6 +5,10 @@
 [![License](https://img.shields.io/cocoapods/l/Storagable.svg?style=flat)](https://cocoapods.org/pods/Storagable)
 [![Platform](https://img.shields.io/cocoapods/p/Storagable.svg?style=flat)](https://cocoapods.org/pods/Storagable)
 
+## !Deprecared
+
+Property Wrappers has solved Storage Problems 
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
